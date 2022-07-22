@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>APP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/script.js'></script>
+</head>
+
+<body>
+
+    <header>Minha Loja 1.0</header>
+
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja</span>
+        </div>
+
+        <div class="card">
+            <div class="lineinput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do produto" />
+            </div>
+
+            <div class="lineinput">
+                <label>Valor</label>
+                <input type="text" id="valor" placeholder="Valor do produto" />
+            </div>
+
+
+            <button onclick="produto.adicionar()">
+                Adicionar
+            </button>
+            <button onclick="produto.deletar()">
+                Deletar
+            </button>
+        </div>
+
+        <div class="content">
+            <table>
+                <thead>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+                    <th>
+                        Ações
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Computador
+                        </td>
+                        <td>
+                            R$4.233,26
+                        </td>
+                        <td class="center">
+                            <button>Editar</button>
+                            <button>Deletar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
